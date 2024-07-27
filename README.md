@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Puneeth G B</h1>
-<h3 align="center">Quantitative Finance</h3>
+<h3 align="center">Passionate About Quant Finance</h3>
 
 - 🔭 I’m currently working on **Mathematical and Computational Modeling for Stock Price Forecasting**
 
