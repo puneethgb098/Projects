@@ -3,13 +3,15 @@
 
 - 🔭 I’m currently working on **Mathematical and Computational Modeling for Stock Price Forecasting**
 
-- 🌱 I’m currently learning **computational finance**
+- 🌱 I’m currently learning **Computational finance**
 
 - 🤝 I’m looking for help with **Optimizing my projects**
 
 - 💬 Ask me about **Finance and Mathematics**
 
 - 📫 How to reach me **puneethgb30@gmail.com**
+
+- 📄 Know about my experiences [https://drive.google.com/file/d/1542EzIvQnljf1zci211BF_k6nZ2ucQd7/view?usp=drive_link](https://drive.google.com/file/d/1542EzIvQnljf1zci211BF_k6nZ2ucQd7/view?usp=drive_link)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
