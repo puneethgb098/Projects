@@ -1,0 +1,39 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+mean = 0.05
+stddev = 0.20
+samples = np.random.lognormal(mean, stddev, 10000)
+
+plt.hist(samples, bins=60, density=True, alpha=0.5, color='blue')
+
+x_min = np.min(samples)
+x_max = np.max(samples)
+x_range = np.linspace(x_min, x_max, 1000)
+
+ln_mean = np.log(samples).mean()
+ln_stddev = np.log(samples).std()
+norm_dist = np.exp(-(x_range-ln_mean)**2/(2*ln_stddev**2)) / (x_range*ln_stddev*np.sqrt(2*np.pi))
+
+plt.plot(x_range, norm_dist, color='red', linewidth=2)
+
+plt.xlabel('Lognormal Distribution')
+plt.ylabel('Frequency')
+plt.title('Lognormal Distribution of a Stock Index')
+
+plt.show()
+
+
+#This code generates random samples from a lognormal distribution, plots a histogram of the samples, and overlays a normal distribution curve on top of the histogram.
+#Here is an explanation of each step:
+#1.  The code imports the required libraries: numpy and matplotlib.pyplot.
+#2.  The code sets the mean and standard deviation of the lognormal distribution to mean = 0.05 and stddev = 0.20, respectively.
+#3.  The code generates 10,000 random samples from the lognormal distribution using the numpy.random.lognormal() function. The function takes the mean, standard deviation, and number of samples as input arguments.
+#4.  The code plots a histogram of the samples using the matplotlib.pyplot.hist() function. The function takes the samples as input and specifies the number of bins, density, alpha, and color of the histogram.
+#5.  The code sets the x-axis range to cover 3 standard deviations from the mean using numpy functions to determine the minimum and maximum values of the samples and create an evenly spaced array of 1000 points between the minimum and maximum values.
+#6.  The code calculates the normal distribution corresponding to the lognormal distribution using the mean and standard deviation of the natural logarithm of the samples, which is known to be normally distributed.
+#7.  The code overlays the normal distribution curve on top of the histogram using the matplotlib.pyplot.plot() function. The function takes the x-axis range and the normal distribution values as input and specifies the color and linewidth of the curve.
+#8.  The code adds labels to the x and y axes and a title to the plot using the matplotlib.pyplot.xlabel(), matplotlib.pyplot.ylabel(), and matplotlib.pyplot.title() functions.
+#9.  The code shows the plot using the matplotlib.pyplot.show() function.
+#Overall, this code is an example of how to generate and visualize random samples from a lognormal distribution and compare it to a corresponding normal distribution. The lognormal distribution is commonly used to model financial variables such as stock prices, and the normal distribution is used in financial models such as the Black-Scholes option pricing model.
+
