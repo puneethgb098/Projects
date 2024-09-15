@@ -11,7 +11,7 @@
 
 - 📫 How to reach me **puneethgb30@gmail.com**
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1542EzIvQnljf1zci211BF_k6nZ2ucQd7/view?usp=drive_link](https://drive.google.com/file/d/1542EzIvQnljf1zci211BF_k6nZ2ucQd7/view?usp=drive_link)
+- 📄 Know about my experiences [https://drive.google.com/file/d/1542EzIvQnljf1zci211BF_k6nZ2ucQd7/view?usp=drive_link)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
