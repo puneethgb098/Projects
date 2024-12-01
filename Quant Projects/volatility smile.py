@@ -13,11 +13,10 @@ def implied_volatility(S, K, r, T, C):
     implied_vol = lambda sigma: abs(bs_call(S, K, r, T, sigma) - C)
     return optimize.minimize(implied_vol, x0=0.5).x[0]
 
-S = 2400                          #the underlying asset price
-K = np.linspace(2100, 2600, num=20) #the strike price #The strike prices are generated using the NumPy linspace function with start at 50, 
-#stop at 150, and num as 21, which means the strike prices will be evenly spaced between 50 and 150 with 21 total strikes.
-r = 7.31                         #the risk-free interest rate
-T = 0.083                          # the time to maturity in years
+S = 2400                         
+K = np.linspace(2100, 2600, num=20) 
+r = 7.31                         
+T = 0.083            
 market_prices = np.array([15.41, 12.13, 9.15, 6.42, 4.18, 2.55, 1.5, 0.85, 0.47, 0.25, 0.12, 0.05, 0.02, 0.01, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0])
 
 implied_vols = []
